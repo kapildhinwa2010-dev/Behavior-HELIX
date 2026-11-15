@@ -46,4 +46,4 @@ jobs:
       - name: Compile and smoke-test package
         run: |
           python -m compileall -q behavior_helix.py tests
-          python -c "from behavior_helix import BehaviorStore; print(type(BehaviorStore()).__name__)"
+          python -c "from behavior_helix import HybridStore; s = HybridStore(); print(type(s).__name__)"
